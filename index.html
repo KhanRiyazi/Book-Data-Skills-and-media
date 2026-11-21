@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Think Clear, Decide Well – Soft Skills + Data Analyst Self-Help Book</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#fbf8f3;--sf:#fff;--tx:#1d2433;--mu:#5b6475;--ac:#d9480f;--ac2:#0b7285;--ln:#e6dfd3}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#12151c;--sf:#1b202b;--tx:#eef0f4;--mu:#a3abbb;--ac:#ff8a4c;--ac2:#4fd1e0;--ln:#2a3140}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#12151c;--sf:#1b202b;--tx:#eef0f4;--mu:#a3abbb;--ac:#ff8a4c;--ac2:#4fd1e0;--ln:#2a3140}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:17px/1.6 Georgia,serif}
+h1,h2,h3,button,.btn,.tag,.ft{font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+.w{max-width:1000px;margin:0 auto;padding:0 20px}
+section{padding:48px 0}
+.hero{display:grid;gap:28px;align-items:center;padding:44px 0}
+@media(min-width:760px){.hero{grid-template-columns:1.2fr 1fr}}
+.tag{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ac2)}
+h1{font-size:clamp(32px,6vw,54px);line-height:1.1;margin:10px 0 14px}
+h2{font-size:clamp(25px,4vw,34px);margin:0 0 6px}
+.lead{color:var(--mu);font-size:18px}
+.btn,button.b{display:inline-block;border:0;cursor:pointer;background:var(--ac);color:#fff;padding:13px 24px;border-radius:10px;font-weight:700;font-size:16px;text-decoration:none;margin:14px 10px 0 0}
+.btn.alt{background:transparent;color:var(--tx);border:2px solid var(--ln)}
+.book{aspect-ratio:3/4;max-width:280px;margin:0 auto;border-radius:6px 14px 14px 6px;background:linear-gradient(160deg,var(--ac2),#1d2433);color:#fff;padding:26px 22px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:12px 16px 30px rgba(0,0,0,.25);border-left:10px solid rgba(255,255,255,.25);font-family:system-ui,sans-serif}
+.book b{font-size:28px;line-height:1.1}
+.band{background:var(--sf);border-block:1px solid var(--ln)}
+.prog{height:10px;background:var(--ln);border-radius:9px;overflow:hidden;margin:12px 0 4px}
+.prog i{display:block;height:100%;width:0;background:var(--ac2);transition:width .3s}
+.ft{font-size:14px;color:var(--mu)}
+.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));margin-top:20px}
+.sk{position:relative;text-align:left;background:var(--sf);color:var(--tx);border:1px solid var(--ln);border-radius:12px;padding:16px;cursor:pointer;font-size:16px}
+.sk:hover,.sk:focus-visible{border-color:var(--ac);outline:none}
+.sk b{display:block}.sk span{color:var(--mu);font-size:14px}
+.sk.done::after{content:"✓";position:absolute;top:10px;right:12px;color:var(--ac2);font-weight:800}
+.road{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:20px}
+.road a{display:block;text-decoration:none;color:var(--tx);background:var(--bg);border:1px solid var(--ln);border-left:4px solid var(--ac);border-radius:10px;padding:14px;font-family:system-ui,sans-serif;font-size:15px}
+.road a b{display:block;color:var(--ac)}
+dialog{border:0;border-radius:16px;padding:0;max-width:560px;width:calc(100% - 28px);background:var(--sf);color:var(--tx);max-height:86vh}
+dialog::backdrop{background:rgba(0,0,0,.55)}
+.in{padding:24px;overflow:auto;max-height:86vh}
+.in h3{margin:0 0 4px;font-size:24px}
+.in h4{margin:18px 0 6px;font:700 13px system-ui,sans-serif;text-transform:uppercase;letter-spacing:.06em;color:var(--ac2)}
+.in ul{margin:0;padding-left:20px}.in li{margin:4px 0}
+.in a{color:var(--ac2);font-weight:600}
+.x{float:right;background:transparent;border:1px solid var(--ln);color:var(--tx);border-radius:8px;padding:6px 12px;cursor:pointer}
+label.m{display:flex;gap:8px;align-items:center;margin-top:18px;font:600 15px system-ui,sans-serif}
+footer{padding:30px 0;text-align:center}
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--ln);font-family:system-ui,sans-serif}
+.nav .w{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:12px;padding-bottom:12px}
+.nav b{font-size:17px}.nav nav{display:flex;gap:18px;align-items:center;font-size:15px}.nav nav a{color:var(--tx);text-decoration:none}.nav nav a.h{display:none}
+@media(min-width:700px){.nav nav a.h{display:inline}}
+.nav .btn{margin:0;padding:9px 16px;font-size:14px}
+.trust{display:flex;flex-wrap:wrap;gap:10px 26px;justify-content:center;font:600 14px system-ui,sans-serif;color:var(--mu);padding:18px 0}
+.row{display:grid;gap:28px;align-items:center;padding:34px 0}
+@media(min-width:760px){.row{grid-template-columns:1fr 1fr}.row.rev .art{order:2}}
+.art{background:var(--sf);border:1px solid var(--ln);border-radius:18px;padding:18px}.art svg{width:100%;height:auto;display:block}
+.row h2{margin-bottom:10px}.row ul{padding-left:20px;color:var(--mu);margin:10px 0 0}
+.adv{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-top:22px}
+.adv div{background:var(--bg);border:1px solid var(--ln);border-radius:12px;padding:18px}.adv h3{margin:0 0 6px;font-size:18px;color:var(--ac)}.adv p{margin:0;color:var(--mu);font-size:15px}
+details{background:var(--sf);border:1px solid var(--ln);border-radius:10px;padding:14px 16px;margin-top:10px}summary{cursor:pointer;font:700 16px system-ui,sans-serif}details p{margin:10px 0 0;color:var(--mu)}
+.fg{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));text-align:left;margin-bottom:18px}.fg a{display:block;color:var(--mu);text-decoration:none;margin:5px 0}.fg b{color:var(--tx)}
+.in p{margin:0}
+.ann{background:var(--ac2);color:#fff;text-align:center;font:600 13px system-ui,sans-serif;padding:8px 14px}.ann a{color:#fff;margin-left:8px;text-decoration:underline}
+.hd{gap:14px}.brand{color:var(--tx);text-decoration:none;font-weight:800;font-size:17px;white-space:nowrap}.sp{flex:1}
+.seg{display:inline-flex;background:var(--sf);border:1px solid var(--ln);border-radius:999px;padding:3px}.seg a{padding:8px 20px;border-radius:999px;color:var(--tx);text-decoration:none;font-weight:700;font-size:15px}.seg a[aria-current=page]{background:var(--ac);color:#fff}
+@media(max-width:560px){.brand span{display:none}.seg a{padding:8px 14px}}
+.view[hidden]{display:none}.ph{padding:40px 0 6px}.ph h1{font-size:clamp(28px,5vw,44px)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}.chip{border:1px solid var(--ln);background:var(--bg);color:var(--tx);border-radius:999px;padding:9px 18px;font-weight:700;font-size:14px;cursor:pointer}.chip.on{background:var(--ac);border-color:var(--ac);color:#fff}
+.lv{display:inline-block;margin-top:8px;font:700 11px system-ui,sans-serif;letter-spacing:.05em;text-transform:uppercase;color:var(--ac2)}
+.chip2{border:1px solid var(--ln);background:var(--bg);color:var(--tx);border-radius:999px;padding:9px 18px;font-weight:700;font-size:14px;cursor:pointer}.chip2.on{background:var(--ac);border-color:var(--ac);color:#fff}
+.av{display:inline-flex;width:40px;height:40px;border-radius:50%;background:var(--ac2);color:#fff;align-items:center;justify-content:center;font:800 15px system-ui,sans-serif;margin-bottom:8px}
+.in .tl li{list-style:none;margin-left:-20px}.in .tl b{color:var(--ac)}
+.nt{margin-top:16px;padding:10px 12px;border-left:4px solid var(--ln);color:var(--mu);font-size:14px}
+.fm{display:grid;gap:10px;max-width:520px;margin:18px auto 0;text-align:left;font-family:system-ui,sans-serif}
+.fm input,.fm select{padding:12px;border-radius:10px;border:1px solid var(--ln);background:var(--bg);color:var(--tx);font-size:16px;width:100%}
+.fm label.c{font-size:14px;color:var(--mu);display:flex;gap:8px;align-items:flex-start}.fm .hp{position:absolute;left:-9999px}
+#fmsg{min-height:22px;font:600 14px system-ui,sans-serif;margin-top:8px;text-align:center}
+</style><script src="config.js"></script>
+</head><body>
+<div class="ann">20 skill lessons, official learning links and 13 book picks <a href="#data">See the data roadmap →</a></div>
+<header class="nav"><div class="w hd"><a class="brand" href="#skills">📘 <span>Think Clear, Decide Well</span></a><div class="seg"><a id="t-skills" href="#skills">Skills</a><a id="t-data" href="#data">Data</a><a id="t-media" href="#media">Media</a></div><div class="sp"></div><a class="btn" href="#" data-books="1">Top books</a></div></header>
+<main id="v-skills" class="view">
+<div class="w">
+<div class="hero"><div>
+<span class="tag">Self-help book · Soft skills + Computer skills + Data</span>
+<h1>Read. Practise. Analyse. Decide your career with data.</h1>
+<p class="lead">Learn the personal and professional soft skills, plus the computer soft skills, that turn you into a confident data analyst. Tap any skill to open a lesson with official links and the best books.</p>
+<a class="btn" href="#soft">Start learning</a><button class="btn alt b" style="background:transparent;color:var(--tx);border:2px solid var(--ln)" data-books="1">Top books to read</button>
+</div>
+<div class="book"><small>Soft skills & data decisions</small><b>Think Clear,<br>Decide Well</b><small>20 skills · Official links · Best books</small></div></div>
+</div>
+
+<div class="w"><div class="trust"><span>✔ 20 skill lessons</span><span>✔ Official learning links</span><span>✔ 13 recommended books</span><span>✔ Progress tracker</span></div></div>
+<div class="band"><div class="w"><section style="padding:30px 0">
+<h2>Your progress</h2>
+<div class="prog"><i id="bar"></i></div><div class="ft" id="pt">0 of 20 skills completed</div>
+</section></div></div>
+
+<div class="w">
+<section id="soft"><h2>Soft skills (personal and professional)</h2>
+<p class="lead">Abilities that help you work effectively with other people.</p><div class="grid" id="g1"></div></section>
+<section id="pc" style="padding-top:0"><h2>Computer soft skills</h2>
+<p class="lead">Using digital tools professionally in a technology-driven workplace.</p><div class="grid" id="g2"></div></section>
+</div>
+
+<div class="w" id="join"><section style="text-align:center;padding-bottom:10px"><h2>Join the reader list</h2><p class="lead">Get book updates and new lessons. <span id="cnt"></span></p>
+<form class="fm" id="fm"><input name="name" placeholder="Your name (optional)" maxlength="80" autocomplete="name"><input name="email" type="email" placeholder="Email address" required maxlength="120" autocomplete="email"><select name="goal"><option>Data Analyst</option><option>Data Science</option><option>AI Innovation</option><option>Soft skills</option></select><input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true"><label class="c"><input type="checkbox" name="consent" style="width:auto" required> I agree to receive updates about the book. You can ask to be removed at any time.</label><button class="btn" type="submit" style="margin:4px 0 0">Join</button></form><div id="fmsg" role="status" aria-live="polite"></div></section></div>
+<div class="w"><section style="text-align:center"><h2>Ready for the data side?</h2><p class="lead">See the roadmap, the career path and how data supports your decisions.</p><a class="btn" href="#data">Go to the Data page</a></section></div>
+</main>
+<main id="v-data" class="view" hidden>
+<div class="w ph"><span class="tag">Data and career</span><h1>From data to a confident career decision</h1><p class="lead">The skills on the first page prepare you. This page shows how data, tools and books turn them into results.</p></div>
+<div class="w">
+<div class="row"><div class="art"><svg viewBox="0 0 400 260" role="img" aria-label="Two people talking with speech bubbles"><rect width="400" height="260" rx="14" fill="var(--bg)"/><circle cx="110" cy="150" r="34" fill="var(--ac)"/><rect x="70" y="190" width="80" height="50" rx="22" fill="var(--ac)"/><circle cx="290" cy="150" r="34" fill="var(--ac2)"/><rect x="250" y="190" width="80" height="50" rx="22" fill="var(--ac2)"/><rect x="60" y="40" width="130" height="50" rx="14" fill="var(--sf)" stroke="var(--ln)"/><rect x="210" y="60" width="130" height="50" rx="14" fill="var(--sf)" stroke="var(--ln)"/><rect x="76" y="56" width="80" height="8" rx="4" fill="var(--ln)"/><rect x="76" y="72" width="54" height="8" rx="4" fill="var(--ln)"/><rect x="226" y="76" width="80" height="8" rx="4" fill="var(--ln)"/><rect x="226" y="92" width="54" height="8" rx="4" fill="var(--ln)"/></svg></div>
+<div><span class="tag">Part 1 · People skills</span><h2>Soft skills open every door</h2><p class="lead">Employers hire for skills, but they promote people who communicate, lead and solve problems with others.</p><ul><li>10 personal and professional skills</li><li>One practice tip for each skill</li><li>Official links and best books</li></ul><a class="btn" href="#soft">Explore soft skills</a><a class="btn alt" href="#" data-p="3">Learn from Bill Gates</a></div></div>
+<div class="row rev"><div class="art"><svg viewBox="0 0 400 260" role="img" aria-label="Laptop showing a chart"><rect width="400" height="260" rx="14" fill="var(--bg)"/><rect x="80" y="40" width="240" height="150" rx="10" fill="var(--sf)" stroke="var(--ln)" stroke-width="3"/><rect x="40" y="194" width="320" height="16" rx="8" fill="var(--ln)"/><rect x="110" y="130" width="28" height="40" fill="var(--ac2)"/><rect x="150" y="105" width="28" height="65" fill="var(--ac2)"/><rect x="190" y="85" width="28" height="85" fill="var(--ac)"/><rect x="230" y="65" width="28" height="105" fill="var(--ac)"/><circle cx="290" cy="72" r="10" fill="var(--ac2)"/></svg></div>
+<div><span class="tag">Part 2 · Digital skills</span><h2>Computer soft skills make you job-ready</h2><p class="lead">Use Gmail, Sheets, Excel, SQL and AI tools like a professional, and keep your data safe.</p><ul><li>10 digital skills with real tools</li><li>Official help centres to learn from</li><li>Security and AI habits for today</li></ul><a class="btn" href="#pc">Explore computer skills</a><a class="btn alt" href="#" data-p="1">Learn from Sundar Pichai</a></div></div>
+<div class="row"><div class="art"><svg viewBox="0 0 400 260" role="img" aria-label="Rising bar chart with an arrow"><rect width="400" height="260" rx="14" fill="var(--bg)"/><line x1="50" y1="210" x2="360" y2="210" stroke="var(--ln)" stroke-width="3"/><rect x="70" y="160" width="40" height="50" fill="var(--ac2)"/><rect x="130" y="130" width="40" height="80" fill="var(--ac2)"/><rect x="190" y="100" width="40" height="110" fill="var(--ac2)"/><rect x="250" y="70" width="40" height="140" fill="var(--ac)"/><path d="M70 140 L150 100 L210 80 L300 40" fill="none" stroke="var(--ac)" stroke-width="5" stroke-linecap="round"/><circle cx="300" cy="40" r="9" fill="var(--ac)"/></svg></div>
+<div><span class="tag">Part 3 · Your career</span><h2>Turn data into a career decision</h2><p class="lead">Collect facts, compare options and choose with confidence. Follow the roadmap to become a data analyst with data science.</p><ul><li>SQL, spreadsheets and Python path</li><li>Statistics and storytelling books</li><li>One data decision every week</li></ul><a class="btn" href="#" data-books="1">See top books</a><a class="btn alt" href="#" data-p="0">Learn from Jeff Bezos</a></div></div></div>
+<div class="w" id="ideals"><section><span class="tag">Inspiration</span><h2>Learn from ideal IT leaders</h2>
+<p class="lead">Five people who shaped the technology industry. Choose a theme to filter, then open a profile for their IT achievements, lessons for your career, official sources and books.</p>
+<div class="chips"><button class="chip2 on" data-g="all">All</button><button class="chip2" data-g="D">Decision-making</button><button class="chip2" data-g="P">Product &amp; technology</button><button class="chip2" data-g="A">AI &amp; future</button><button class="chip2" data-g="L">Leadership &amp; scale</button></div>
+<div class="grid" id="pg"></div></section></div>
+<div class="band" id="roadmap"><div class="w"><section><h2>Roadmap: data analyst, data science, AI innovation</h2>
+<p class="lead">Choose your goal to filter the stages. Tap a stage to open the full lesson with official links and books.</p>
+<div class="chips"><button class="chip on" data-f="all">All stages</button><button class="chip" data-f="A">Data Analyst</button><button class="chip" data-f="S">Data Science</button><button class="chip" data-f="I">AI Innovation</button></div>
+<div class="prog"><i id="rbar"></i></div><div class="ft" id="rpt"></div><div class="grid" id="rg"></div></section></div></div>
+<div class="band" style="margin-top:20px"><div class="w"><section><h2>Why this book works</h2><div class="adv"><div><h3>Practical, at your pace</h3><p>Short lessons and one action per skill, so you can learn in a busy day.</p></div><div><h3>Trusted sources</h3><p>Links go to official help centres and learning sites, not random blogs.</p></div><div><h3>Learn by doing</h3><p>Tick each skill when done and watch your progress grow.</p></div><div><h3>Career focused</h3><p>Every skill supports the goal: data analyst with data science.</p></div></div></section></div></div>
+<div class="w"><section id="faq"><h2>Frequently asked questions</h2><details><summary>Who is this book for?</summary><p>Students, job seekers and working people who want better people skills, digital skills and a path into data analysis.</p></details><details><summary>Do I need to know coding?</summary><p>No. Start with spreadsheets and SQL. Python comes later in the roadmap.</p></details><details><summary>Where do the links go?</summary><p>To official help centres and course sites. Book links open an Open Library search.</p></details><details><summary>How do I track my learning?</summary><p>Open a skill and tick "I completed this skill". The bar saves your progress in your browser.</p></details></section></div>
+<div class="w"><section style="text-align:center"><h2>Make one decision with data this week</h2><p class="lead">Pick one skill, finish its lesson, read one book and track your result.</p><a class="btn" href="#skills">Back to Skills</a></section></div>
+</main>
+<main id="v-media" class="view" hidden>
+<div class="w ph"><span class="tag">Media</span><h1>Learn from podcasts, magazines and blogs</h1><p class="lead">Real conversations with founders, trusted business journalism and the best blogs for future entrepreneurs. Tap any card for what to learn, a task to try and the official link.</p></div>
+<div class="w"><div class="row"><div class="art"><svg viewBox="0 0 400 260" role="img" aria-label="Microphone and sound waves"><rect width="400" height="260" rx="14" fill="var(--bg)"/><rect x="170" y="50" width="60" height="110" rx="30" fill="var(--ac)"/><path d="M140 130 a60 60 0 0 0 120 0" fill="none" stroke="var(--ac2)" stroke-width="8" stroke-linecap="round"/><line x1="200" y1="190" x2="200" y2="225" stroke="var(--ac2)" stroke-width="8"/><line x1="165" y1="228" x2="235" y2="228" stroke="var(--ac2)" stroke-width="8" stroke-linecap="round"/><path d="M90 100 q-18 30 0 60 M60 85 q-32 45 0 90 M310 100 q18 30 0 60 M340 85 q32 45 0 90" fill="none" stroke="var(--ln)" stroke-width="6" stroke-linecap="round"/></svg></div>
+<div><span class="tag">Featured podcast</span><h2>Raj Shamani's Figuring Out</h2><p class="lead">Long, candid conversations with business people, creators and experts. Listen, take notes and turn one idea into one action.</p><a class="btn" href="#" data-m="0">About the podcast</a><a class="btn alt" href="#" data-m="1">Book: Build, Don't Talk</a></div></div></div>
+<div class="w"><section style="padding-top:10px"><h2>Entrepreneur episodes</h2><p class="lead">Founder conversations from the podcast. Open the playlist and search the guest name to find the episode.</p><div class="grid" id="mg1"></div></section>
+<section style="padding-top:0"><h2>BBC and TIME</h2><p class="lead">Trusted business journalism for stories, trends and case studies.</p><div class="grid" id="mg2"></div></section>
+<section style="padding-top:0"><h2>Rich lists and the right data</h2><p class="lead">Forbes and other magazines publish lists of the richest people. Start with the mentor guide, then open each list and compare. National and international sources are both included.</p><div class="grid" id="mg4"></div></section>
+<section style="padding-top:0"><h2>Best blogs for entrepreneurs</h2><p class="lead">Essays and guides from startup builders and investors.</p><div class="grid" id="mg3"></div></section></div>
+</main>
+<div class="w"><footer class="ft"><div class="fg"><div><b>Learn</b><a href="#soft">Soft skills</a><a href="#pc">Computer skills</a><a href="#faq">FAQ</a></div><div><b>Official sites</b><a target="_blank" rel="noopener" href="https://www.mindtools.com/">Mind Tools</a><a target="_blank" rel="noopener" href="https://www.kaggle.com/learn">Kaggle Learn</a><a target="_blank" rel="noopener" href="https://sqlbolt.com">SQLBolt</a></div></div>© 2026 Think Clear, Decide Well. Links open official websites.</footer></div>
+<dialog id="d"><div class="in" id="c"></div></dialog>
+
+<script>
+var S=[
+["Communication","Express your thoughts clearly.","Write your point in one sentence before every meeting.",[["Mind Tools: Communication","https://www.mindtools.com/"],["Harvard Business Review","https://hbr.org/"]],[["How to Win Friends and Influence People","Dale Carnegie"],["Crucial Conversations","Patterson et al."]]],
+["Leadership","Guide and motivate others.","Ask your team one question daily: what is blocking you?",[["Harvard Business Review: Leadership","https://hbr.org/topic/subject/leadership"],["Mind Tools","https://www.mindtools.com/"]],[["Leaders Eat Last","Simon Sinek"],["The 7 Habits of Highly Effective People","Stephen Covey"]]],
+["Teamwork","Work with different people.","Agree roles and deadlines in writing at the start.",[["Mind Tools","https://www.mindtools.com/"],["Google re:Work","https://rework.withgoogle.com/"]],[["The Five Dysfunctions of a Team","Patrick Lencioni"],["Team of Teams","Stanley McChrystal"]]],
+["Problem-solving","Find solutions.","Define the problem in numbers, then list 3 options.",[["Mind Tools","https://www.mindtools.com/"],["Kaggle Learn","https://www.kaggle.com/learn"]],[["Thinking in Systems","Donella Meadows"],["How to Solve It","George Polya"]]],
+["Critical thinking","Make logical decisions.","Ask: what evidence would change my mind?",[["Mind Tools","https://www.mindtools.com/"],["Purdue OWL","https://owl.purdue.edu/"]],[["Thinking, Fast and Slow","Daniel Kahneman"],["Factfulness","Hans Rosling"]]],
+["Time management","Prioritize your work.","Choose the 3 most important tasks each morning.",[["Google Calendar Help","https://support.google.com/calendar"],["Mind Tools","https://www.mindtools.com/"]],[["Deep Work","Cal Newport"],["Atomic Habits","James Clear"]]],
+["Adaptability","Adjust to changes.","Learn one new tool or method every month.",[["Coursera: Learning How to Learn","https://www.coursera.org/learn/learning-how-to-learn"],["Mind Tools","https://www.mindtools.com/"]],[["Mindset","Carol Dweck"],["Who Moved My Cheese?","Spencer Johnson"]]],
+["Emotional intelligence","Understand emotions.","Name your feeling before you reply to a hard message.",[["Harvard Business Review","https://hbr.org/"],["Mind Tools","https://www.mindtools.com/"]],[["Emotional Intelligence","Daniel Goleman"],["Emotional Intelligence 2.0","Bradberry & Greaves"]]],
+["Decision-making","Make better choices.","Write your options, criteria and data, then score them.",[["Mind Tools","https://www.mindtools.com/"],["Google Data Analytics Certificate","https://www.coursera.org/professional-certificates/google-data-analytics"]],[["Thinking in Bets","Annie Duke"],["Decisive","Chip Heath & Dan Heath"]]],
+["Conflict resolution","Handle disagreements.","Repeat the other person's view before you answer.",[["Mind Tools","https://www.mindtools.com/"],["Harvard Business Review","https://hbr.org/"]],[["Getting to Yes","Fisher & Ury"],["Never Split the Difference","Chris Voss"]]]
+];
+var C=[
+["Digital communication","Gmail, Google Meet","Use clear subjects and short emails.",[["Gmail Help","https://support.google.com/mail"],["Google Meet Help","https://support.google.com/meet"]],[["Writing Without Bullshit","Josh Bernoff"],["Remote","Fried & Hansson"]]],
+["Document management","Google Docs, MS Word","Use headings, styles and version history.",[["Google Docs Help","https://support.google.com/docs"],["Microsoft Word Support","https://support.microsoft.com/en-us/word"]],[["The Elements of Style","Strunk & White"],["On Writing Well","William Zinsser"]]],
+["Spreadsheet management","Google Sheets, Excel","Learn filters, pivot tables and lookup formulas.",[["Google Sheets Help","https://support.google.com/docs"],["Microsoft Excel Support","https://support.microsoft.com/en-us/excel"]],[["Excel Bible","Michael Alexander"],["Data Smart","John Foreman"]]],
+["Presentation","Google Slides, PowerPoint","One message per slide, with one chart.",[["Google Slides Help","https://support.google.com/docs"],["PowerPoint Support","https://support.microsoft.com/en-us/powerpoint"]],[["Storytelling with Data","Cole Nussbaumer Knaflic"],["Presentation Zen","Garr Reynolds"]]],
+["Online collaboration","Google Drive","Use shared folders, comments and clear file names.",[["Google Drive Help","https://support.google.com/drive"],["Google re:Work","https://rework.withgoogle.com/"]],[["Remote","Fried & Hansson"],["Getting Things Done","David Allen"]]],
+["Digital research","Google Search","Check the source, the date and a second source.",[["Google Search Help","https://support.google.com/websearch"],["Google Scholar","https://scholar.google.com/"]],[["Factfulness","Hans Rosling"],["Calling Bullshit","Bergstrom & West"]]],
+["Data management","SQL, databases","Practise SELECT, JOIN, GROUP BY every day.",[["SQLBolt","https://sqlbolt.com"],["PostgreSQL Docs","https://www.postgresql.org/docs/"]],[["Learning SQL","Alan Beaulieu"],["SQL Queries for Mere Mortals","John Viescas"]]],
+["Online professionalism","Email etiquette","Reply politely, keep a clean profile and proofread.",[["Purdue OWL: Email","https://owl.purdue.edu/"],["Gmail Help","https://support.google.com/mail"]],[["The Essential Guide to Business Etiquette","Mary Mitchell"],["Writing Without Bullshit","Josh Bernoff"]]],
+["Cybersecurity awareness","Passwords, 2FA, phishing","Turn on 2-step verification everywhere you can.",[["Google 2-Step Verification","https://www.google.com/landing/2step/"],["CISA Secure Our World","https://www.cisa.gov/secure-our-world"],["Have I Been Pwned","https://haveibeenpwned.com"]],[["Cybersecurity for Beginners","Raef Meeuwisse"],["Hacking Humans","Christopher Hadnagy"]]],
+["AI productivity","ChatGPT, Gemini","Give AI context, then check every fact it gives you.",[["ChatGPT","https://chatgpt.com"],["Gemini","https://gemini.google.com"],["Google AI Essentials","https://grow.google/ai-essentials/"]],[["Co-Intelligence","Ethan Mollick"],["AI Superpowers","Kai-Fu Lee"]]]
+];
+var TOP=[["Data and decisions",[["Storytelling with Data","Cole Nussbaumer Knaflic"],["Naked Statistics","Charles Wheelan"],["The Art of Statistics","David Spiegelhalter"],["Python for Data Analysis","Wes McKinney"],["Data Science for Business","Provost & Fawcett"]]],
+["Money and mindset",[["The Psychology of Money","Morgan Housel"],["Think and Grow Rich","Napoleon Hill"],["Rich Dad Poor Dad","Robert Kiyosaki"],["The Millionaire Next Door","Stanley & Danko"]]],
+["Habits and thinking",[["Atomic Habits","James Clear"],["Thinking, Fast and Slow","Daniel Kahneman"],["Deep Work","Cal Newport"],["How to Win Friends and Influence People","Dale Carnegie"]]]];
+var PARA=[
+"Good communication means a clear message, active listening and the right tone. Most misunderstandings come from unclear words, not bad intent. Say your main point first, then give reasons, and always check that the other person understood.",
+"Leaders do not only give orders. They set direction, remove obstacles and help people grow. Trust is built by being fair, honest and consistent. Praise in public, correct in private, and give clear goals.",
+"Strong teams share goals, respect different views and know who does what. Diversity helps when people feel safe to speak. Agree on roles, deadlines and how you will give feedback before work starts.",
+"Problem-solving starts with defining the real problem, not the first symptom. Break it into small parts, collect data, list options and test the best one. Review what happened so the next problem is easier.",
+"Critical thinking means asking whether a claim is supported by evidence. Notice your own bias, look for a second source and separate facts from opinions. It protects you from bad data and bad decisions.",
+"Time management is choosing what matters most, not doing everything. Separate urgent from important tasks, plan focus blocks and say no politely. Small daily routines beat last-minute rushing.",
+"The world of work changes fast. Adaptable people stay calm, learn quickly and see change as a chance to grow. Keep a learning habit, ask for feedback and be willing to try a new method.",
+"Emotional intelligence has four parts: knowing your emotions, managing them, understanding others and handling relationships. Pause before reacting, ask questions and listen to feelings as well as facts.",
+"Good decisions use clear options, clear criteria and good data. Write what matters most, score each option, and check for bias. Then decide, act and review the result so you learn from it.",
+"Conflict is normal when people care about results. Stay calm, listen first, focus on the problem and not the person, and look for a solution that works for both sides. Early, respectful talks prevent bigger fights.",
+"Email and video meetings are the main way teams talk. Use a clear subject, short paragraphs and a clear request. On Meet, test sound, mute when not speaking and share a short agenda.",
+"Well-managed documents save hours. Use headings and styles, name files clearly, and use version history so nothing is lost. Share by link with the right permission instead of sending many copies.",
+"Spreadsheets are the first tool of every data analyst. Learn clean tables, sorting, filters, pivot tables and formulas like SUM, IF and lookups. Keep raw data separate from your analysis.",
+"A good presentation tells one story. Put one main message on each slide, use a simple chart and big text, and finish with a clear next step. Practise aloud to stay within time.",
+"Shared folders, comments and clear file names let teams work together without confusion. Give the right access, such as view or edit, and keep one single source of truth for every file.",
+"Searching well is a professional skill. Use exact phrases, site names and date filters, then check who wrote the page and when. Confirm important facts with at least two trusted sources.",
+"Data lives in databases, and SQL is the language to ask questions. Learn SELECT, WHERE, JOIN and GROUP BY. Good data management means clean, correct and well-labelled data.",
+"Your online behaviour shapes your reputation. Write polite emails with a greeting and a clear request, proofread before sending, keep a professional profile and reply on time.",
+"Most attacks target people, not computers. Use long unique passwords with a password manager, turn on two-step verification, and think before you click links or open attachments from unknown senders.",
+"AI tools can draft, summarise and explain faster than you can alone. Give clear context, ask for steps, and always check facts. Never share private data. AI helps your thinking, but you stay responsible."];
+var LV={A:"Data Analyst",S:"Data Science",I:"AI Innovation"},fl="all",rdone={};
+try{rdone=JSON.parse(localStorage.getItem("rm")||"{}")}catch(e){}
+var RM=[
+["1. Spreadsheets","AS","2-3 weeks","Every analyst starts here. Learn clean tables, sorting, filters, pivot tables and formulas, then build a simple chart from real data. Spreadsheets teach you how data is shaped before you write any code.",["Clean tables and data types","SUM, IF, XLOOKUP, COUNTIF","Pivot tables and charts","Data validation and sharing"],"Track your own monthly expenses and answer: where does my money go?",[["Google Sheets Help","https://support.google.com/docs"],["Microsoft Excel Support","https://support.microsoft.com/en-us/excel"]],[["Data Smart","John Foreman"],["Excel Bible","Michael Alexander"]]],
+["2. SQL","AS","3-4 weeks","SQL is the language for asking questions of databases. Most analyst jobs use it daily. Learn to select, filter, join and summarise data, and always check your result for errors.",["SELECT, WHERE, ORDER BY","JOIN across tables","GROUP BY and HAVING","Window functions basics"],"Write 20 queries on a sample sales database and explain each answer in one sentence.",[["SQLBolt","https://sqlbolt.com"],["PostgreSQL Docs","https://www.postgresql.org/docs/"]],[["Learning SQL","Alan Beaulieu"],["SQL Queries for Mere Mortals","John Viescas"]]],
+["3. Statistics","AS","4 weeks","Statistics tells you whether a pattern is real or just chance. Learn averages, spread, probability, sampling and hypothesis tests. This is the base for every later step, including machine learning.",["Mean, median, standard deviation","Probability and distributions","Sampling and confidence intervals","Hypothesis testing, correlation"],"Compare two groups in a dataset and say if the difference is significant.",[["Khan Academy: Statistics","https://www.khanacademy.org/math/statistics-probability"]],[["Naked Statistics","Charles Wheelan"],["The Art of Statistics","David Spiegelhalter"]]],
+["4. Visualization","A","3 weeks","A good chart makes a decision easy. Learn to pick the right chart, remove clutter and tell a story with data. Dashboards turn your analysis into something managers use every day.",["Chart types and when to use them","Colour and labels","Dashboards in Power BI or Looker Studio","Data storytelling"],"Build a one-page dashboard from a public dataset with 3 key insights.",[["Power BI Docs","https://learn.microsoft.com/en-us/power-bi/"],["Looker Studio Help","https://support.google.com/looker-studio"]],[["Storytelling with Data","Cole Nussbaumer Knaflic"]]],
+["5. Python for data","AS","4-6 weeks","Python lets you handle more data and automate work. Learn the basics, then pandas for tables, NumPy for numbers and matplotlib for charts. Write small scripts every day.",["Variables, loops, functions","pandas DataFrames","NumPy arrays","matplotlib charts, Jupyter notebooks"],"Load a CSV in a notebook, clean it and plot three charts.",[["Python Tutorial","https://docs.python.org/3/tutorial/"],["pandas Docs","https://pandas.pydata.org/docs/"],["Kaggle Learn","https://www.kaggle.com/learn"]],[["Python for Data Analysis","Wes McKinney"]]],
+["6. Cleaning and EDA","AS","3 weeks","Real data is messy. Exploratory data analysis means checking missing values, duplicates, outliers and patterns before drawing any conclusion. Good analysts spend most of their time here.",["Missing values and duplicates","Outliers and data types","Summary statistics and plots","Writing clear findings"],"Take a messy public dataset, clean it and write a one-page findings report.",[["pandas: Working with missing data","https://pandas.pydata.org/docs/"],["Kaggle Learn: Data Cleaning","https://www.kaggle.com/learn"]],[["Practical Statistics for Data Scientists","Bruce & Gedeck"]]],
+["7. Git and portfolio","ASI","2 weeks","Employers want proof. Use Git and GitHub to save your work, and publish 3 to 5 projects with a clear README. Explain the problem, the data, your method and your result in simple words.",["Git commit, branch, push","GitHub README writing","Project write-ups","LinkedIn and portfolio site"],"Publish your first two projects on GitHub with clear READMEs.",[["Git Docs","https://git-scm.com/doc"],["GitHub Docs","https://docs.github.com"]],[["Show Your Work!","Austin Kleon"]]],
+["8. Machine learning","SI","6-8 weeks","Machine learning finds patterns to predict outcomes. Start with regression and classification, learn to split data into train and test sets, and measure results honestly. Simple models often win.",["Regression and classification","Train, test, cross-validation","Metrics: accuracy, precision, recall, RMSE","Feature engineering with scikit-learn"],"Predict house prices or customer churn and compare 3 models.",[["scikit-learn Docs","https://scikit-learn.org/stable/"],["Google ML Crash Course","https://developers.google.com/machine-learning/crash-course"]],[["Hands-On Machine Learning","Aurelien Geron"],["An Introduction to Statistical Learning","James et al."]]],
+["9. Deep learning","I","6-8 weeks","Deep learning uses neural networks for images, text and sound. Learn how networks train, then build small models with PyTorch or TensorFlow. Focus on understanding, not only copying code.",["Neural networks and backpropagation","PyTorch or TensorFlow basics","Image classification","Overfitting and regularisation"],"Train an image classifier and explain where it makes mistakes.",[["PyTorch Tutorials","https://pytorch.org/tutorials/"],["TensorFlow Learn","https://www.tensorflow.org/learn"],["fast.ai Course","https://course.fast.ai/"]],[["Deep Learning","Goodfellow et al."]]],
+["10. NLP and LLMs","I","4-6 weeks","Large language models read and write text. Learn tokens, embeddings, prompting, retrieval and evaluation. Build a small assistant that answers questions from your own documents, and test it for wrong answers.",["Text processing and embeddings","Prompting and system instructions","Retrieval-augmented generation","Evaluating model answers"],"Build a question-answer assistant over a set of PDFs and test it with 20 questions.",[["Hugging Face Learn","https://huggingface.co/learn"],["Claude Docs","https://docs.claude.com"],["OpenAI Docs","https://platform.openai.com/docs"]],[["AI Engineering","Chip Huyen"],["Co-Intelligence","Ethan Mollick"]]],
+["11. MLOps and deployment","SI","4 weeks","A model is useful only when people can use it. Learn to wrap a model in an API, package it with Docker, track experiments and monitor it after launch. This is how data science becomes a product.",["FastAPI model endpoint","Docker basics","Experiment tracking with MLflow","Monitoring and retraining"],"Deploy a model as an API and call it from a simple web page.",[["FastAPI Docs","https://fastapi.tiangolo.com/"],["Docker Get Started","https://docs.docker.com/get-started/"],["MLflow Docs","https://mlflow.org/docs/latest/"]],[["Designing Machine Learning Systems","Chip Huyen"]]],
+["12. Responsible AI and innovation","I","Ongoing","AI innovation needs trust. Learn about bias, privacy, safety and clear communication of limits. Then pick a real problem in your field and design an AI solution that is useful, fair and measurable.",["Bias and fairness checks","Privacy and data protection","Risk management","Turning an idea into a pilot"],"Write a one-page plan for an AI tool in your field, with risks and success measures.",[["NIST AI Risk Management Framework","https://www.nist.gov/itl/ai-risk-management-framework"],["Google Responsible AI","https://ai.google/responsibility/"]],[["Weapons of Math Destruction","Cathy O'Neil"],["AI Superpowers","Kai-Fu Lee"]]]
+];
+function rlv(r){return r[1].split("").map(function(x){return LV[x]}).join(" / ")}
+function rdraw(){
+ var list=RM.map(function(r,i){return [r,i]}).filter(function(p){return fl==="all"||p[0][1].indexOf(fl)>=0});
+ document.getElementById("rg").innerHTML=list.map(function(p){var r=p[0],i=p[1];return '<button class="sk'+(rdone[i]?' done':'')+'" data-r="'+i+'"><b>'+r[0]+'</b><span>'+r[2]+'</span><div class="lv">'+rlv(r)+'</div></button>'}).join("");
+ document.querySelectorAll(".chip").forEach(function(b){b.classList.toggle("on",b.dataset.f===fl)});
+ var n=list.filter(function(p){return rdone[p[1]]}).length;
+ document.getElementById("rbar").style.width=(list.length?n/list.length*100:0)+"%";
+ document.getElementById("rpt").textContent=n+" of "+list.length+" stages completed in this view";
+}
+function ropen(i){var r=RM[i];
+ c.innerHTML='<button class="x" data-x="1">Close</button><h3>'+r[0]+'</h3><div class="ft">'+rlv(r)+' · about '+r[2]+'</div>'+
+ '<h4>Key knowledge</h4><p>'+r[3]+'</p><h4>What you will learn</h4><ul>'+r[4].map(function(t){return '<li>'+t+'</li>'}).join("")+'</ul>'+
+ '<h4>Practice project</h4><p>'+r[5]+'</p><h4>Official links</h4><ul>'+r[6].map(function(l){return '<li><a target="_blank" rel="noopener" href="'+l[1]+'">'+l[0]+'</a></li>'}).join("")+'</ul>'+
+ '<h4>Best books</h4><ul>'+r[7].map(bk).join("")+'</ul>'+
+ '<label class="m"><input type="checkbox" data-rc="'+i+'"'+(rdone[i]?' checked':'')+'> I completed this stage</label>';
+ d.showModal();}
+document.addEventListener("change",function(e){if(e.target.dataset.rc!==undefined){rdone[e.target.dataset.rc]=e.target.checked;try{localStorage.setItem("rm",JSON.stringify(rdone))}catch(x){}rdraw()}});
+var TH={D:"Decision-making",P:"Product and technology",A:"AI and future",L:"Leadership and scale"},gf="all";
+var PP=[
+["Jeff Bezos","Founder of Amazon · the decision maker","DPL","Bezos built Amazon by making many decisions fast and by thinking about the long term. He separates one-way doors (hard to reverse, decide slowly) from two-way doors (easy to reverse, decide fast), and often acts with about 70 percent of the information he would like.",
+[["1994","Founded Amazon, starting as an online bookstore."],["1997","Amazon went public."],["2000","Founded the space company Blue Origin."],["2005","Launched Amazon Prime."],["2006","Launched Amazon Web Services, an early leader in cloud computing."],["2007","Launched the Kindle e-reader."],["2021","Stepped down as Amazon CEO and became executive chairman."]],
+["Use the Regret Minimization Framework: ask what you will regret at age 80, not only what is safe today.","Start from the customer and work backwards, writing the result before you build it.","Sort decisions into reversible and irreversible, and move fast on reversible ones."],
+"Before your next career choice, write two options, the data you have, and what you would regret not trying in 10 years.",
+[["About Amazon","https://www.aboutamazon.com/"]],[["The Everything Store","Brad Stone"],["Working Backwards","Colin Bryar & Bill Carr"],["Invent and Wander","Jeff Bezos"]],
+"Amazon has also faced public criticism about warehouse working conditions and market power. Read more than one view."],
+["Sundar Pichai","Google and Alphabet CEO · product and AI builder","PAL","Pichai rose from product work to lead one of the largest technology companies. He is known for building useful products at huge scale, working calmly with teams, and pushing Google to put AI at the centre of its products.",
+[["2004","Joined Google."],["2008","Helped launch the Chrome browser."],["2013","Took charge of Android as well as Chrome."],["2015","Became CEO of Google."],["2019","Became CEO of Alphabet, Google's parent company."],["2016 onward","Set Google's direction as an AI-first company."]],
+["Master one product deeply, then widen your scope.","Build simple tools that millions of people can use.","Stay calm and collaborative; good teams ship better products."],
+"Pick one tool in your data stack, such as SQL or Python, and become the person others ask about it.",
+[["Google Blog","https://blog.google/"],["Alphabet Investor Relations","https://abc.xyz/"]],[["In the Plex","Steven Levy"],["How Google Works","Eric Schmidt & Jonathan Rosenberg"]],
+"Facts here are from public records up to the latest I know; check official sites for current roles."],
+["Elon Musk","Tesla, SpaceX, xAI · first-principles builder","PA","Musk is known for taking on very hard engineering problems and iterating quickly. He describes first-principles thinking: break a problem down to basic facts and rebuild the answer, instead of copying what others do.",
+[["1999","Co-founded X.com, which later became part of PayPal."],["2002","Founded SpaceX."],["2008","SpaceX Falcon 1 reached orbit; Musk became Tesla CEO."],["2012","SpaceX Dragon became the first private spacecraft to dock with the space station."],["2015","SpaceX landed a Falcon 9 first stage after launch."],["2016 and 2023","Co-founded Neuralink; later launched the AI company xAI."]],
+["Break big problems into basic facts, then test your own answer.","Build, test, learn and repeat quickly.","Learn across fields: software, hardware and manufacturing."],
+"Take one problem at work, list its basic facts, and build a small data test in a week.",
+[["SpaceX","https://www.spacex.com/"],["Tesla","https://www.tesla.com/"]],[["Elon Musk","Walter Isaacson"],["Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future","Ashlee Vance"],["Liftoff","Eric Berger"]],
+"Critics point to missed deadlines, safety questions and controversial public statements. Read balanced sources."],
+["Bill Gates","Microsoft co-founder · software pioneer","LP","Gates helped start the personal computer software industry. He is known for long-term vision, heavy reading and focused thinking, and later for turning his wealth to global health through his foundation.",
+[["1975","Co-founded Microsoft with Paul Allen."],["1981","Microsoft supplied the operating system for the IBM PC."],["1985","Microsoft released Windows."],["1986","Microsoft went public."],["2000","Started the Bill and Melinda Gates Foundation, now the Gates Foundation, and stepped down as CEO."],["2020","Left the Microsoft board."]],
+["Read widely and set aside focused time to think.","Think about where technology will be in 10 years.","Use your success to help others."],
+"Schedule one hour weekly with no screen to read or plan your learning.",
+[["Gates Notes","https://www.gatesnotes.com/"],["Gates Foundation","https://www.gatesfoundation.org/"]],[["Source Code","Bill Gates"],["The Road Ahead","Bill Gates"],["Hard Drive","James Wallace & Jim Erickson"]],
+"Microsoft faced a major US antitrust case around 2000. Read more than one view."],
+["Mark Zuckerberg","Meta founder · social platform tycoon","PAL","Zuckerberg built Facebook from a college project into a global platform and kept making big bets, from mobile to virtual reality to AI. He is known for fast iteration and for long-term investment in new platforms.",
+[["2004","Launched Facebook at Harvard."],["2012","Facebook went public and bought Instagram."],["2014","Bought WhatsApp and Oculus."],["2021","Renamed the company Meta."],["2023","Released the Llama open AI models."]],
+["Ship early and improve from user feedback.","Change direction when the platform shifts, as with mobile.","Invest in new areas before they are obvious."],
+"Build a small project this month, publish it, and improve it from real feedback.",
+[["Meta Newsroom","https://about.fb.com/news/"]],[["The Facebook Effect","David Kirkpatrick"],["The Accidental Billionaires","Ben Mezrich"],["Zucked","Roger McNamee"]],
+"Meta has faced serious criticism about privacy and misinformation. Read more than one view."]
+];
+function pdraw(){
+ document.getElementById("pg").innerHTML=PP.map(function(p,i){return [p,i]}).filter(function(x){return gf==="all"||x[0][2].indexOf(gf)>=0}).map(function(x){var p=x[0];return '<button class="sk" data-p="'+x[1]+'"><span class="av">'+p[0].split(" ").map(function(w){return w[0]}).join("")+'</span><b>'+p[0]+'</b><span>'+p[1]+'</span><div class="lv">'+p[2].split("").map(function(k){return TH[k]}).join(" · ")+'</div></button>'}).join("");
+ document.querySelectorAll(".chip2").forEach(function(b){b.classList.toggle("on",b.dataset.g===gf)});
+}
+function popen(i){var p=PP[i];
+ c.innerHTML='<button class="x" data-x="1">Close</button><h3>'+p[0]+'</h3><div class="ft">'+p[1]+'</div>'+
+ '<h4>Key idea</h4><p>'+p[3]+'</p><h4>IT achievements</h4><ul class="tl">'+p[4].map(function(a){return '<li><b>'+a[0]+'</b> · '+a[1]+'</li>'}).join("")+'</ul>'+
+ '<h4>Lessons for your career</h4><ul>'+p[5].map(function(t){return '<li>'+t+'</li>'}).join("")+'</ul>'+
+ '<h4>Try this week</h4><p>'+p[6]+'</p><h4>Official sources</h4><ul>'+p[7].map(function(l){return '<li><a target="_blank" rel="noopener" href="'+l[1]+'">'+l[0]+'</a></li>'}).join("")+'</ul>'+
+ '<h4>Recommended books</h4><ul>'+p[8].map(bk).join("")+'</ul><div class="nt">'+p[9]+'</div>';
+ d.showModal();}
+var PL="https://youtube.com/playlist?list=PLE0Jo6NF_JYO5-phess8GKafKMtPv3tfZ",AP="https://podcasts.apple.com/in/podcast/id1501941375";
+var MD=[
+["Raj Shamani's Figuring Out","Podcast","Figuring Out is a long-form podcast where Raj Shamani talks with business people, creators and experts in India. Episodes are on Apple Podcasts and YouTube, and the descriptions often include timestamps so you can jump to the part you need.",["Pick one episode a week and finish it","Write 3 lessons in your notes","Apply one lesson within 7 days"],"Listen to one founder episode this week and write one action you will take.",[["Apple Podcasts",AP],["YouTube playlist",PL]],[],"Guests share personal views. Compare more than one source before big decisions."],
+["Build, Don't Talk","Book by Raj Shamani","Build, Don't Talk is a book by Raj Shamani, available in English and Hindi. Its title carries the message: start building and let results speak. Read the store description to see the chapters before you buy.",["Read one chapter, then act on it","Start a small project instead of only planning","Share your progress with one person"],"After each chapter, build one small thing in a week, such as a page, a pitch or a first customer call.",[["Order in English (link from the podcast description)","https://amzn.eu/d/eCfijRu"],["Order in Hindi (link from the podcast description)","https://amzn.eu/d/4wZISO0"]],[["Build, Don't Talk","Raj Shamani"]],"These store links come from the podcast's own episode descriptions. Prices and stock vary by store."],
+["Nirmit Parikh","Founder and CEO of Apna · Episode FO 216","In this episode Raj talks with Nirmit Parikh, founder and CEO of Apna, one of India's largest jobs and professional networking platforms. The episode title mentions building a company with zero revenue.",["How a startup begins before it earns money","Building a large jobs platform for India","Hiring, growth and finding customers"],"Write a one-page idea: who is the customer, what problem, and how will you reach 10 users?",[["Episode playlist: search FO 216",PL],["Apple Podcasts",AP]],[],"Episode details come from the public episode listing. Open the episode for the full story."],
+["Sanjiv Goenka","Business leader · Figuring Out guest","This conversation covers his childhood and generational wealth, his views on wealth and his advice for new parents, according to the episode timestamps. It shows how a leader from a business family thinks about money and values.",["Views on wealth and responsibility","Growing up in a business family","Values that last across generations"],"Write your own money rules: how you will earn, save and give.",[["Episode playlist: search the guest name",PL],["Apple Podcasts",AP]],[],"Topics come from episode timestamps. Check the episode for his exact words."],
+["Y.S. Prabhu Kumar","Founder and CEO of Wegofin · Figuring Out guest","Raj talks with the founder and CEO of Wegofin about banking, credit cards and loans, based on the episode tags. A good listen if you want to understand how money products work before building one.",["How banks, cards and loans work","Basics of fintech businesses","Why money knowledge helps founders"],"List 3 money products you use and write how each one earns for the company.",[["Episode playlist: search the guest name",PL],["Apple Podcasts",AP]],[],"Topics come from episode tags. Not financial advice."],
+["Rajiv Talreja","Business lessons · FO 457, January 2026","The episode is titled Brutal Business Lessons for 2026: Marketing, Branding and Indian Customers. It focuses on how to sell and brand in India, a useful lesson for any first-time founder.",["Marketing and branding basics","Understanding Indian customers","Lessons for a business in 2026"],"Pick a product, write one sentence for who buys it and why, and test it with 5 people.",[["Episode playlist: search FO 457",PL],["Apple Podcasts",AP]],[],"Title and date come from the public episode listing."],
+["BBC Business and Worklife","BBC","BBC covers business news, founder stories and the changing world of work. Use it to see how companies grow and fail around the world, and to learn what employers and customers want.",["Read one founder story each week","Follow trends in work and technology","Compare how different countries do business"],"Read one article and write the business model in 3 lines: who pays, for what, and why.",[["BBC Business","https://www.bbc.com/business"],["BBC Worklife","https://www.bbc.com/worklife"],["Search BBC for entrepreneurs","https://www.bbc.co.uk/search?q=entrepreneurs"]],[],"Section names and layouts on the BBC site can change. Use the search link if a page has moved."],
+["TIME Business and Entrepreneurship","TIME magazine","TIME publishes business reporting, startup stories and lists of influential companies and people. Use it to learn what shapes industries and what makes a business worth following.",["Spot trends before they are common","Learn from startup and founder stories","See what makes a company influential"],"Choose one company in the news and write 3 reasons it is growing or struggling.",[["TIME Business","https://time.com/section/business/"],["TIME: Entrepreneurship tag","https://time.com/tag/entrepreneurship/"],["TIME: Startup tag","https://time.com/tag/startup"]],[],"Tag pages can show older articles. Use the Business section for newer stories."],
+["Paul Graham Essays","Blog · Y Combinator co-founder","Paul Graham writes short, clear essays about startups, ideas and how to think. Many founders treat them as a starter course in building a company.",["How to find a startup idea","Why to make things people want","Thinking clearly about work"],"Read one essay and write the idea in your own words in 3 lines.",[["Paul Graham essays","https://paulgraham.com/articles.html"]],[],"Essays reflect one investor's view. Check ideas against your own market."],
+["Y Combinator Library","Startup guide","The Y Combinator library collects videos and articles on starting up, from finding ideas and users to fundraising. It is a free, practical guide.",["Find a problem worth solving","Talk to users early","Understand fundraising basics"],"Pick one article and apply its first step to your own idea this week.",[["Y Combinator Library","https://www.ycombinator.com/library"]],[],"Advice is often aimed at technology startups."],
+["The First Round Review","Blog","First Round Review shares detailed lessons from founders and operators on hiring, product and growth. Good for practical, step-by-step ideas.",["Hiring your first team","Building product and culture","Growing a young company"],"Read one article and turn its advice into a 5-item checklist.",[["First Round Review","https://review.firstround.com/"]],[],"Written mainly for venture-backed technology startups."],
+["a16z","Blog","The a16z site publishes articles and podcasts on technology, startups, AI and markets. Useful for seeing where big investors think industries are going.",["Understand technology trends","Learn how investors think","Follow AI and software markets"],"Read one article on AI and note one business opportunity it suggests.",[["a16z","https://a16z.com/"]],[],"This is an investor's view. Treat it as one source among many."],
+["Harvard Business Review: Entrepreneurship","Magazine and blog","HBR publishes research-based articles on starting, funding and running businesses. Use it for tested ideas on strategy, leadership and growth.",["Strategy for new businesses","Leading small teams","Using data in decisions"],"Read one article and write how you could use its idea in your business or job.",[["HBR Entrepreneurship","https://hbr.org/topic/subject/entrepreneurship"]],[],"Some articles need a subscription."],
+["Sam Altman's Blog","Blog","Sam Altman writes about startups, ambition and technology. His posts are short and aimed at people building companies.",["Thinking about long-term goals","Startup advice from an investor-builder","Technology and the future"],"Read one post and write one goal you will pursue for the next 12 months.",[["Sam Altman's blog","https://blog.samaltman.com/"]],[],"Personal opinions. Compare with other sources."],
+["Seth Godin's Blog","Blog","Seth Godin publishes a short post every day on marketing, trust and making work that matters. Easy reading for anyone learning to sell an idea.",["Marketing as honest storytelling","Finding your small audience","Shipping your work"],"Read one post and write who your smallest useful audience would be.",[["Seth's Blog","https://seths.blog/"]],[],"Short posts. Read widely, not only one writer."],
+["Indie Hackers","Community and blog","Indie Hackers shares stories of people building small online businesses, often with revenue numbers and honest lessons. Good for seeing real small-scale paths.",["How small products grow","What early revenue looks like","Mistakes founders share"],"Read one story and note the first 3 things the founder did.",[["Indie Hackers","https://www.indiehackers.com/"]],[],"Stories are self-reported. Think before copying any plan."],
+["Startup India","Official Government of India site","Startup India is the official government portal for startups. Use it to learn about recognition, schemes and support, and to find official information for founders in India.",["Understand startup recognition","Find government schemes and support","Read official guidance"],"Open the site and list 2 schemes or services that could help your idea.",[["Startup India","https://www.startupindia.gov.in/"]],[],"Rules and schemes change. Check the official site for current details."],
+["Mentor guide: get the right data","Mentor guide","Rich lists look simple, but each one is built differently. Before you use any number, find out who made it, when, how and in what currency. A careful analyst compares at least two sources and goes back to primary sources.",["Check the date: a list uses a snapshot day, and share prices change daily","Check the scope: one person or a whole family","Check the currency and exchange rate, for example USD and INR","Check the method: listed shares are easy to value, private companies are estimates","Compare at least two lists and note why they differ","Go to primary sources such as company filings and regulators","Save the source, link and date next to every number"],"Build a Google Sheet with the top 10 from Forbes, Hurun and Bloomberg. Columns: name, rank, net worth, currency, list date, person or family. Then write 3 lines on why the numbers differ.",[["SEC EDGAR (US company filings)","https://www.sec.gov/edgar"],["BSE India","https://www.bseindia.com/"],["NSE India","https://www.nseindia.com/"],["SEBI","https://www.sebi.gov.in/"],["World Bank Data","https://data.worldbank.org/"],["IMF Data","https://www.imf.org/en/Data"]],[],"Net worth lists are estimates, not audited figures. Treat any single number with care."],
+["Forbes: World's Billionaires","Magazine · international","Forbes publishes an annual World's Billionaires list built from a snapshot date, and a real-time ranking that updates through the year. Read the stories behind the numbers to see how fortunes were built in technology, retail, finance and more.",["How fortunes are built across industries","The difference between an annual snapshot and a real-time ranking","How to read a profile: source of wealth, year, first product"],"Pick three people from the top 10 and write how each fortune began: industry, year and first product.",[["Forbes Billionaires","https://www.forbes.com/billionaires/"],["Forbes Real-Time Billionaires","https://www.forbes.com/real-time-billionaires/"]],[],"Forbes real-time can show a different order than other lists. Always note the date you read it."],
+["Forbes India Rich List","Magazine · national","Forbes India publishes an annual India Rich List of the country's richest people. Read it with the magazine's stories to see how founders and business families built wealth in India, then compare it with other lists.",["How Indian business families and founders built wealth","Which industries create wealth in India","How the list changes year to year"],"List the top 10 and mark each person's industry. Count which industry appears most.",[["Forbes India","https://www.forbesindia.com/"]],[],"I could not confirm the direct address of the list page. Search for Forbes India Rich List on the site."],
+["Hurun India and Global Rich Lists","Research list · national and international","The Hurun Research Institute publishes India and global rich lists each year. Business Standard and Gulf News reported that the M3M Hurun India Rich List 2026, released on 23 September 2026, ranks 1,810 people with at least 1,000 crore rupees and shows some entries as families.",["How a list can rank families, not only individuals","How the cut-off wealth changes the list","Which new sectors create wealth, such as AI"],"Read the Business Standard report below and write 3 facts. Then find the same person on the Forbes list and compare.",[["Hurun India","https://www.hurunindia.com/"],["Hurun Research Institute","https://www.hurun.net/"],["Business Standard report on the 2026 list","https://www.business-standard.com/finance/personal-finance/india-s-richest-in-2026-adani-tops-the-list-27-new-billionaires-emerge-126092300983_1.html"]],[],"Reports describe the list as of its release date. Check the Hurun site for the latest."],
+["Bloomberg Billionaires Index","Daily ranking · international","The Bloomberg Billionaires Index is a daily ranking of the world's richest people, updated each business day after the close of trading in New York. It is a good source for seeing how wealth moves with markets.",["How daily market moves change net worth","How to read the date and time of an update","How to compare a daily index with an annual list"],"Open the index today and again next week. Note one person who moved, and why.",[["Bloomberg Billionaires Index","https://www.bloomberg.com/billionaires/"]],[],"Some content may need a subscription or may differ by region."],
+["Business Standard: Indian billionaires","National newspaper","Business Standard is an Indian business newspaper that follows Indian billionaires and rich lists. Use it to read national news and context, and check each article's Updated On date.",["Read national coverage of rich lists","Check each story's date","See how Indian lists compare with global lists"],"Open one story, write its date and source list, and check the same fact on the list's own website.",[["Indian billionaires topic","https://www.business-standard.com/topic/indian-billionaires"],["Billionaires in India topic","https://www.business-standard.com/topic/billionaires-in-india"]],[],"News pages change daily. Always confirm numbers on the original list."]
+];
+function mdraw(){
+ function f(a,b,id){document.getElementById(id).innerHTML=MD.slice(a,b).map(function(m,i){return '<button class="sk" data-m="'+(a+i)+'"><b>'+m[0]+'</b><span>'+m[1]+'</span></button>'}).join("")}
+ f(2,6,"mg1");f(6,8,"mg2");f(8,18,"mg3");f(18,MD.length,"mg4");
+}
+function mopen(i){var m=MD[i];
+ c.innerHTML='<button class="x" data-x="1">Close</button><h3>'+m[0]+'</h3><div class="ft">'+m[1]+'</div>'+
+ '<h4>Key knowledge</h4><p>'+m[2]+'</p><h4>What you will learn</h4><ul>'+m[3].map(function(t){return '<li>'+t+'</li>'}).join("")+'</ul>'+
+ '<h4>Try this week</h4><p>'+m[4]+'</p><h4>Links</h4><ul>'+m[5].map(function(l){return '<li><a target="_blank" rel="noopener" href="'+l[1]+'">'+l[0]+'</a></li>'}).join("")+'</ul>'+
+ (m[6].length?'<h4>Book</h4><ul>'+m[6].map(bk).join("")+'</ul>':'')+'<div class="nt">'+m[7]+'</div>';
+ d.showModal();}
+var all=S.concat(C),done={},d=document.getElementById("d"),c=document.getElementById("c");
+try{done=JSON.parse(localStorage.getItem("sk")||"{}")}catch(e){}
+function bk(b){return '<li><a target="_blank" rel="noopener" href="https://openlibrary.org/search?q='+encodeURIComponent(b[0]+' '+b[1])+'">'+b[0]+'</a> by '+b[1]+'</li>'}
+function draw(){
+ [[S,"g1",0],[C,"g2",S.length]].forEach(function(x){
+  document.getElementById(x[1]).innerHTML=x[0].map(function(s,i){var k=i+x[2];return '<button class="sk'+(done[k]?' done':'')+'" data-i="'+k+'"><b>'+s[0]+'</b><span>'+s[1]+'</span></button>'}).join("");
+ });
+ var n=Object.keys(done).filter(function(k){return done[k]}).length;
+ document.getElementById("bar").style.width=(n/all.length*100)+"%";
+ document.getElementById("pt").textContent=n+" of "+all.length+" skills completed";
+}
+function open_(i){var s=all[i];
+ c.innerHTML='<button class="x" data-x="1">Close</button><h3>'+s[0]+'</h3><div class="ft">'+s[1]+'</div>'+
+ '<h4>Key knowledge</h4><p>'+PARA[i]+'</p><h4>Practise today</h4><ul><li>'+s[2]+'</li></ul>'+
+ '<h4>Official links</h4><ul>'+s[3].map(function(l){return '<li><a target="_blank" rel="noopener" href="'+l[1]+'">'+l[0]+'</a></li>'}).join("")+'</ul>'+
+ '<h4>Best books</h4><ul>'+s[4].map(bk).join("")+'</ul>'+
+ '<label class="m"><input type="checkbox" data-i="'+i+'" data-chk="1"'+(done[i]?' checked':'')+'> I completed this skill</label>';
+ d.showModal();}
+function top_(){c.innerHTML='<button class="x" data-x="1">Close</button><h3>Top books to read</h3><div class="ft">Links open a book search on Open Library.</div>'+TOP.map(function(g){return '<h4>'+g[0]+'</h4><ul>'+g[1].map(bk).join("")+'</ul>'}).join("");d.showModal();}
+document.addEventListener("click",function(e){
+ var t=e.target.closest("[data-i],[data-books],[data-x],[data-r],[data-f],[data-p],[data-g],[data-m]");if(!t)return;
+ if(t.dataset.m!==undefined){e.preventDefault();mopen(+t.dataset.m)}else if(t.dataset.g!==undefined){gf=t.dataset.g;pdraw()}else if(t.dataset.p!==undefined){e.preventDefault();popen(+t.dataset.p)}else if(t.dataset.f!==undefined){fl=t.dataset.f;rdraw()}else if(t.dataset.r!==undefined)ropen(+t.dataset.r);else if(t.dataset.x)d.close();else if(t.dataset.books){e.preventDefault();top_()}else if(t.dataset.chk){}else open_(+t.dataset.i);
+});
+document.addEventListener("change",function(e){if(e.target.dataset.chk){done[e.target.dataset.i]=e.target.checked;try{localStorage.setItem("sk",JSON.stringify(done))}catch(x){}draw()}});
+d.addEventListener("click",function(e){if(e.target===d)d.close()});
+function show(n){["skills","data","media"].forEach(function(v){document.getElementById("v-"+v).hidden=v!==n;var t=document.getElementById("t-"+v);if(v===n)t.setAttribute("aria-current","page");else t.removeAttribute("aria-current")});}
+function route(){var h=location.hash.slice(1);if(h===""||h==="skills"||h==="data"||h==="media"){show(h==="data"||h==="media"?h:"skills");window.scrollTo(0,0);return}var el=document.getElementById(h);if(el){var v=el.closest(".view");if(v)show(v.id.slice(2));el.scrollIntoView()}}
+addEventListener("hashchange",route);route();
+draw();rdraw();pdraw();mdraw();
+
+var API=(window.APP_CONFIG||{}).API_URL||"";var API_OK=/^https:\/\/script\.google\.com\/macros\/s\/[^\s]+\/exec$/.test(API);
+function uid(){var u="";try{u=localStorage.getItem("uid")||""}catch(e){}if(!u){u=(window.crypto&&crypto.randomUUID)?crypto.randomUUID():String(Date.now())+"-"+Math.random().toString(16).slice(2);try{localStorage.setItem("uid",u)}catch(e){}}return u}
+function post(o){return fetch(API,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(o)}).then(function(r){return r.json()})}
+var st;function sync(){if(!API_OK)return;clearTimeout(st);st=setTimeout(function(){post({action:"progress",id:uid(),skills:done,stages:rdone}).catch(function(){})},600)}
+document.addEventListener("change",function(e){if(e.target.dataset&&(e.target.dataset.chk!==undefined||e.target.dataset.rc!==undefined))sync()});
+(function(){var f=document.getElementById("fm"),m=document.getElementById("fmsg");if(!f)return;
+ if(!API_OK){f.querySelector("button").disabled=true;m.textContent="The reader list is not connected yet (backend URL not set).";}
+ else fetch(API+"?action=stats").then(function(r){return r.json()}).then(function(j){if(j&&j.ok&&j.readers>0)document.getElementById("cnt").textContent=j.readers+" readers have joined."}).catch(function(){});
+ f.addEventListener("submit",function(e){e.preventDefault();if(!API_OK)return;var fd=new FormData(f);m.textContent="Sending...";
+  post({action:"subscribe",name:fd.get("name"),email:fd.get("email"),goal:fd.get("goal"),consent:!!fd.get("consent"),website:fd.get("website")})
+  .then(function(j){if(j.ok){m.textContent="Thank you! You are on the list.";f.reset()}else m.textContent="Sorry: "+(j.error||"please try again.")})
+  .catch(function(){m.textContent="Network error. Please try again."})});
+})();
+</script></body></html>
